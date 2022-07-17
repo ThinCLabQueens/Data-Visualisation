@@ -11,7 +11,7 @@ def call(file):
         
         os.chdir(file.split(".")[0])
         subprocess.run(r"proc.bat")
-        1/0
+        
     except Exception as e:
         rs = os.getcwd()
         os.chdir("..")
